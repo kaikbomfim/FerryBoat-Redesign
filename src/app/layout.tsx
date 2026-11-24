@@ -9,7 +9,7 @@ import { VLibras } from "@/components/site/vlibras"
 const atkinson = Atkinson_Hyperlegible_Next({
   variable: "--font-atkinson",
   subsets: ["latin"],
-  weight: ["400", "600", "700", "800"],
+  // fonte variável: um único arquivo cobre todos os pesos
   display: "swap",
   adjustFontFallback: false,
   fallback: ["system-ui", "Segoe UI", "Arial", "sans-serif"],
@@ -18,14 +18,14 @@ const atkinson = Atkinson_Hyperlegible_Next({
 const barlow = Barlow_Condensed({
   variable: "--font-barlow-cond",
   subsets: ["latin"],
-  weight: ["600", "700", "800"],
+  weight: ["700", "800"],
   style: ["normal", "italic"],
   display: "swap",
 })
 
 export const metadata: Metadata = {
-  // Protótipo acadêmico: não deve aparecer em buscadores no lugar do site oficial
-  robots: { index: false, follow: false },
+  // Na versão publicada (GitHub Pages) o protótipo não deve aparecer em buscadores no lugar do site oficial
+  ...(process.env.GITHUB_PAGES === "true" && { robots: { index: false, follow: false } }),
   title: {
     default: "Ferry-Boat Salvador–Itaparica | Horários, tarifas e fila",
     template: "%s | Ferry-Boat Salvador–Itaparica",
@@ -51,10 +51,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         >
           Pular para o conteúdo
         </a>
-        <p className="bg-ink px-4 py-1.5 text-center text-sm text-white">
+        <aside aria-label="Aviso" className="bg-ink px-4 py-1.5 text-center text-sm text-white">
           <strong className="text-brand">Protótipo acadêmico</strong> de redesign · não é o site oficial da Internacional
           Travessias Salvador
-        </p>
+        </aside>
         <Header />
         <main id="conteudo" tabIndex={-1} className="flex-1 outline-none">
           {children}

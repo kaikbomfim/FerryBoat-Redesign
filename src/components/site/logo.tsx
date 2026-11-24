@@ -11,7 +11,6 @@ export function Logo({ variante = "cor" }: { variante?: "cor" | "branco" }) {
         src={variante === "cor" ? logo : logoBranco}
         alt="Internacional Travessias Salvador, página inicial"
         className="h-11 w-auto sm:h-12"
-        preload
       />
     </Link>
   )
