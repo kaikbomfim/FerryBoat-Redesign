@@ -1,11 +1,35 @@
 import Link from "next/link"
 import { contatos, FONTE_DADOS, terminais } from "@/data/ferry"
+import Image from "next/image"
+import atendente from "@/assets/img/atendente.webp"
 import { Logo } from "./logo"
 import { navItems } from "./nav-items"
 
 export function Footer() {
   return (
-    <footer className="mt-16 border-t-4 border-brand bg-ink text-white">
+    <footer className="mt-16 bg-ink text-white">
+      {/* Faixa "Fale com a gente!" com a atendente, como no rodapé do site original */}
+      <div className="bg-brand text-ink">
+        <div className="relative mx-auto flex max-w-6xl flex-wrap items-center gap-x-6 gap-y-2 px-4 py-4 sm:px-6 md:pl-56">
+          <Image
+            src={atendente}
+            alt=""
+            className="pointer-events-none absolute bottom-0 left-6 hidden h-44 w-auto md:block"
+            sizes="150px"
+          />
+          <p className="font-marca text-3xl font-bold italic">Fale com a gente!</p>
+          <p className="text-lg font-semibold">
+            SAC{" "}
+            <a href={contatos.sac.href} className="font-bold text-ink underline">
+              {contatos.sac.valor}
+            </a>{" "}
+            · WhatsApp{" "}
+            <a href={contatos.whatsapp.href} className="font-bold text-ink underline">
+              {contatos.whatsapp.valor}
+            </a>
+          </p>
+        </div>
+      </div>
       <div className="mx-auto max-w-6xl px-4 pt-10 sm:px-6">
         <Logo variante="branco" />
       </div>

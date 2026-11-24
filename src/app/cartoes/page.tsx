@@ -9,6 +9,7 @@ import Image from "next/image"
 import imgRecarregavel from "@/assets/img/cartao-recarregavel.webp"
 import imgSocial from "@/assets/img/cartao-tarifa-social.webp"
 import imgEstudante from "@/assets/img/cartao-estudante.webp"
+import icCartao from "@/assets/img/ic-cartao.webp"
 import banner from "@/assets/img/banner-horarios.webp"
 
 const imagens = { "ferry-card": imgRecarregavel, "tarifa-social": imgSocial, estudante: imgEstudante } as const
@@ -36,7 +37,6 @@ export default function CartoesPage() {
       <PageIntro
         atual="Cartões"
         banner={banner}
-        bannerPosicao="center 70%"
         titulo="Cartões do ferry"
         descricao="Compare os três cartões e veja, em passos simples, como pedir o seu."
       />
@@ -50,8 +50,9 @@ export default function CartoesPage() {
                 value={c.id}
                 id={`aba-cartao-${c.id}`}
                 aria-controls={`painel-cartao-${c.id}`}
-                className="min-h-12 rounded-lg px-4 text-base font-semibold whitespace-normal"
+                className="min-h-12 gap-2 rounded-lg px-4 text-base font-semibold whitespace-normal"
               >
+                <Image src={icCartao} alt="" className="h-5 w-auto" />
                 {c.nome}
               </TabsTrigger>
             ))}

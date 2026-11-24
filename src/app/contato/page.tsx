@@ -3,7 +3,8 @@ import { Mail, MapPin, MessageCircle, Phone } from "lucide-react"
 
 import { PageIntro, Secao } from "@/components/site/page-intro"
 import { contatos, terminais } from "@/data/ferry"
-import banner from "@/assets/img/banner-contato.webp"
+import Image from "next/image"
+import atendente from "@/assets/img/atendente-contato.webp"
 
 export const metadata: Metadata = {
   title: "Contato",
@@ -24,13 +25,13 @@ export default function ContatoPage() {
     <>
       <PageIntro
         atual="Contato"
-        banner={banner}
-        bannerPosicao="center"
         titulo="Fale com a gente"
         descricao="Escolha o que você precisa e use o canal certo. Assim seu pedido é resolvido mais rápido."
       />
       <div className="mx-auto max-w-6xl space-y-12 px-4 py-10 sm:px-6">
         <Secao id="canais" titulo="O que você precisa?">
+          <div className="grid gap-6 lg:grid-cols-[240px_1fr]">
+          <Image src={atendente} alt="" className="mx-auto hidden h-auto w-60 self-start lg:block" sizes="240px" />
           <ul className="grid gap-4 md:grid-cols-2">
             {porNecessidade.map(({ preciso, canal, icone: Icone }) => (
               <li key={preciso} className="flex gap-4 rounded-2xl border bg-card p-5">
@@ -47,6 +48,7 @@ export default function ContatoPage() {
               </li>
             ))}
           </ul>
+          </div>
         </Secao>
 
         <Secao id="presencial" titulo="Atendimento presencial">

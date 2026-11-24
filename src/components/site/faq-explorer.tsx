@@ -6,6 +6,8 @@ import Link from "next/link"
 import Image from "next/image"
 import { Search, X } from "lucide-react"
 import icDuvida from "@/assets/img/ic-duvida.webp"
+import icAbrir from "@/assets/img/ic-abrir.webp"
+import icFechar from "@/assets/img/ic-fechar.webp"
 
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { faqs } from "@/data/faq"
@@ -141,7 +143,11 @@ export function FaqExplorer({
         >
           {resultados.map((f) => (
             <AccordionItem key={f.id} value={f.id}>
-              <AccordionTrigger className="min-h-14 items-center gap-3 py-4 text-base font-bold text-ink hover:no-underline">
+              <AccordionTrigger
+                className="min-h-14 items-center gap-3 py-4 text-base font-bold text-ink hover:no-underline"
+                iconeFechado={<Image src={icAbrir} alt="" className="h-5 w-auto" />}
+                iconeAberto={<Image src={icFechar} alt="" className="h-5 w-auto" />}
+              >
                 <Image src={icDuvida} alt="" className="size-7 shrink-0" />
                 <span className="flex-1">{f.pergunta}</span>
               </AccordionTrigger>

@@ -79,7 +79,6 @@ export default function FilometroPage() {
       <PageIntro
         atual="Filômetro"
         banner={banner}
-        bannerPosicao="center"
         titulo="Como está a fila agora"
         descricao="Situação das filas em cada terminal, separada para quem vai de carro e quem vai a pé."
       />

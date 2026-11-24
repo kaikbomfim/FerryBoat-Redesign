@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import { ArrowRight, Info, MapPin } from "lucide-react"
+import { ArrowRight, Check, MapPin } from "lucide-react"
 
 import { GradeHorarios } from "@/components/site/grade-horarios"
 import { PageIntro, Secao } from "@/components/site/page-intro"
@@ -24,7 +24,6 @@ export default function HorariosPage() {
       <PageIntro
         atual="Horários"
         banner={banner}
-        bannerPosicao="center 60%"
         titulo="Horários do ferry-boat"
         descricao="Saídas de hora em hora, ao mesmo tempo, de Salvador e de Itaparica. Já marcamos a grade que vale para hoje."
       />
@@ -78,9 +77,11 @@ export default function HorariosPage() {
         <Secao id="atencao" titulo="Antes de ir">
           <ul className="space-y-3">
             {horarios.observacoes.map((o) => (
-              <li key={o} className="flex gap-3 text-ink">
-                <Info className="mt-0.5 size-5 shrink-0 text-primary" aria-hidden="true" />
-                <span>{o}</span>
+              <li key={o} className="flex items-center gap-4 rounded-xl bg-muted py-2 pr-4 pl-2 text-ink">
+                <span className="grid size-10 shrink-0 place-items-center rounded-full border-4 border-white bg-brand text-ink shadow-sm">
+                  <Check className="size-5" strokeWidth={3.5} aria-hidden="true" />
+                </span>
+                <span className="text-lg">{o}</span>
               </li>
             ))}
           </ul>

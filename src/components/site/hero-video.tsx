@@ -38,18 +38,19 @@ export function HeroVideo() {
   if (!ativo) return null
   return (
     <>
+      <div className="absolute inset-0 -z-10" aria-hidden="true">
       <video
         ref={ref}
-        className="absolute inset-0 h-full w-full object-cover"
+        className="h-full w-full object-cover"
         src={`${BASE}/video/ferry-hero.mp4`}
         autoPlay
         muted
         loop
         playsInline
         preload="none"
-        aria-hidden="true"
         tabIndex={-1}
       />
+      </div>
       <button
         type="button"
         onClick={() => {
@@ -63,7 +64,7 @@ export function HeroVideo() {
             setPausado(true)
           }
         }}
-        className="absolute right-4 bottom-4 z-10 inline-flex min-h-11 items-center gap-2 rounded-full bg-ink/80 px-4 text-sm font-semibold text-white backdrop-blur hover:bg-ink"
+        className="absolute right-4 bottom-4 z-20 inline-flex min-h-11 items-center gap-2 rounded-full bg-ink/80 px-4 text-sm font-semibold text-white backdrop-blur hover:bg-ink"
       >
         {pausado ? <Play className="size-4" aria-hidden="true" /> : <Pause className="size-4" aria-hidden="true" />}
         {pausado ? "Tocar vídeo de fundo" : "Pausar vídeo de fundo"}

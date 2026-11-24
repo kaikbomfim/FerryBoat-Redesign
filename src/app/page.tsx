@@ -38,9 +38,7 @@ export default function Home() {
           sizes="100vw"
           className="-z-20 object-cover"
         />
-        <div className="absolute inset-0 -z-10">
-          <HeroVideo />
-        </div>
+        <HeroVideo />
         <div
           className="absolute inset-0 -z-10 bg-gradient-to-r from-ink via-ink/85 to-ink/30"
           aria-hidden="true"
@@ -105,8 +103,8 @@ export default function Home() {
           </ul>
         </section>
 
-        <section aria-labelledby="aviso-titulo" className="grid gap-5 overflow-hidden rounded-2xl border bg-card sm:grid-cols-[260px_1fr]">
-          <Image src={boletim} alt="" className="h-full w-full object-cover object-left" sizes="(min-width: 640px) 260px, 100vw" />
+        <section aria-labelledby="aviso-titulo" className="grid gap-5 overflow-hidden rounded-2xl border bg-card sm:grid-cols-[300px_1fr]">
+          <Image src={boletim} alt="" className="h-auto w-full self-center" sizes="(min-width: 640px) 300px, 100vw" />
           <div className="p-5 sm:py-6 sm:pr-6 sm:pl-0">
             <p className="text-sm font-bold tracking-wide text-primary uppercase">Fique por dentro</p>
             <h2 id="aviso-titulo" className="mt-1 text-2xl font-bold text-ink">
@@ -130,7 +128,7 @@ export default function Home() {
                 <Image
                   src={bannerFerryCard}
                   alt="Faça o seu Ferry Card: praticidade no embarque"
-                  className="aspect-[3/2] w-full object-cover object-top"
+                  className="h-auto w-full"
                   sizes="(min-width: 768px) 50vw, 100vw"
                 />
                 <span className="block p-5">
@@ -144,7 +142,7 @@ export default function Home() {
                 <Image
                   src={bannerHoraMarcada}
                   alt="Hora Marcada: garanta sua passagem"
-                  className="aspect-[3/2] w-full object-cover object-top"
+                  className="h-auto w-full"
                   sizes="(min-width: 768px) 50vw, 100vw"
                 />
                 <span className="block p-5">

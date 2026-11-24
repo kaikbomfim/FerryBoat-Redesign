@@ -1,6 +1,8 @@
 "use client"
 
+import Image from "next/image"
 import { useState } from "react"
+import icRelogio from "@/assets/img/ic-hora-marcada.webp"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { horarios } from "@/data/ferry"
 import { formatarHora, paraMinutos } from "@/lib/tempo"
@@ -24,7 +26,8 @@ export function GradeHorarios() {
     <Tabs value={grade} onValueChange={(v) => setGrade(v as Grade)}>
       <TabsList className="grid w-full grid-cols-1 gap-1 rounded-xl p-1 group-data-horizontal/tabs:h-auto sm:inline-grid sm:w-fit sm:grid-cols-2">
         {(Object.keys(rotulos) as Grade[]).map((g) => (
-          <TabsTrigger key={g} value={g} id={`aba-horarios-${g}`} aria-controls={`painel-horarios-${g}`} className="min-h-11 rounded-lg px-4 text-[0.95rem] font-semibold whitespace-normal">
+          <TabsTrigger key={g} value={g} id={`aba-horarios-${g}`} aria-controls={`painel-horarios-${g}`} className="min-h-12 gap-2 rounded-lg px-4 text-[0.95rem] font-semibold whitespace-normal">
+            <Image src={icRelogio} alt="" className="size-7" />
             {rotulos[g].aba}
             {info?.grade === g && (
               <span className="ml-1 rounded-full bg-brand px-2 py-0.5 text-xs font-bold text-brand-foreground">hoje</span>
