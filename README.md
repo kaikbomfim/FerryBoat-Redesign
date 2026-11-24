@@ -34,15 +34,15 @@ Medições no celular (Google Lighthouse, validador W3C e axe-core), comparando 
 
 | Métrica | Site original | Redesign |
 |---|---|---|
-| Lighthouse – Desempenho (página inicial) | 57 | 88 |
-| Lighthouse – Desempenho (demais páginas) | 62 (Tarifas) | 91–95 |
+| Lighthouse – Desempenho (página inicial) | 57 | 83 |
+| Lighthouse – Desempenho (demais páginas) | 62 (Tarifas) | 87–94 |
 | Lighthouse – Acessibilidade | 79 | 100 |
-| Maior conteúdo visível (LCP, página inicial) | 14,4 s | 3,8 s |
-| Peso da página inicial | 6,9 MB | 0,58 MB |
+| Maior conteúdo visível (LCP, página inicial) | 14,4 s | 4,6 s |
+| Peso da página inicial | 6,9 MB | 0,79 MB |
 | Erros no validador W3C (página inicial) | 46 | 0 |
 | Violações WCAG 2.2 AA (axe-core) | até 6 tipos por página | 0 |
 
-Mesmo mantendo as fotos, o vídeo e a identidade visual da marca, as imagens foram convertidas para WebP e o vídeo foi comprimido e só carrega no desktop.
+Os números já incluem as fotos, os banners e o vídeo da marca em alta qualidade. O vídeo só carrega no desktop e as imagens abaixo da primeira tela são carregadas sob demanda.
 
 ## Deploy da Aplicação
 
