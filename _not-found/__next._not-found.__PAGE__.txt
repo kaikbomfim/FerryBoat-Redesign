@@ -1,0 +1,29 @@
+2:"$Sreact.fragment"
+3:"/FerryBoat-Redesign/_next/static/chunks/1debtssykq3ye.js"
+4:"/FerryBoat-Redesign/_next/static/chunks/3ivyvl85llr03.js"
+5:"/FerryBoat-Redesign/_next/static/chunks/3cpx3uullz8a6.js"
+6:"/FerryBoat-Redesign/_next/static/chunks/0heckisfconrb.js"
+7:I[39756,["$3","$4","$5","$6"],"default"]
+8:I[37457,["$3","$4","$5","$6"],"default"]
+d:I[22016,["$3","$4","$5","$6"],""]
+e:I[97367,["$3","$4","$5","$6"],"OutletBoundary"]
+f:"$Sreact.suspense"
+12:"ViewportBoundary"
+13:I[97367,["$3","$4","$5","$6"],"$12"]
+14:"MetadataBoundary"
+15:I[97367,["$3","$4","$5","$6"],"$14"]
+16:I[27201,["$3","$4","$5","$6"],"IconMark"]
+a:X
+a:C
+b:X
+c:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$2","c",{"children":[["$","div",null,{"className":"mx-auto max-w-2xl px-4 py-20 text-center sm:px-6","children":[["$","p",null,{"className":"text-sm font-bold text-primary","children":"Erro 404"}],["$","h1",null,{"className":"mt-2 text-3xl font-extrabold text-ink","children":"Página não encontrada"}],["$","p",null,{"className":"mt-3 text-lg text-muted-foreground","children":"O endereço pode ter mudado. Tente um destes caminhos:"}],["$","ul",null,{"className":"mt-6 flex flex-wrap justify-center gap-3","children":[["$","li","/",{"children":["$","$Ld",null,{"href":"/","className":"inline-flex min-h-11 items-center rounded-xl border-2 border-primary px-4 font-semibold text-primary no-underline hover:bg-secondary","children":"Início"}]}],["$","li","/horarios",{"children":["$","$Ld",null,{"href":"/horarios","className":"inline-flex min-h-11 items-center rounded-xl border-2 border-primary px-4 font-semibold text-primary no-underline hover:bg-secondary","children":"Horários"}]}],["$","li","/tarifas",{"children":["$","$Ld",null,{"href":"/tarifas","className":"inline-flex min-h-11 items-center rounded-xl border-2 border-primary px-4 font-semibold text-primary no-underline hover:bg-secondary","children":"Tarifas"}]}],["$","li","/duvidas",{"children":["$","$Ld",null,{"href":"/duvidas","className":"inline-flex min-h-11 items-center rounded-xl border-2 border-primary px-4 font-semibold text-primary no-underline hover:bg-secondary","children":"Dúvidas"}]}]]}]]}],null,["$","$Le",null,{"children":["$","$f",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]]}],"p":"$@11","v":null,"s":"$b"}}]]
+1:[["children",{"s":"/_not-found","h":64,"d":{"r":["$","$2","c",{"children":[null,["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}]}]]}],"p":"$@9","v":"$a","s":"$b"},"c":"$Qc"}]]
+0:{"t":{"t":{"s":"","h":16,"c":"$Q1"},"h":{"r":["$","$2","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L13",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","2",{"name":"theme-color","content":"#00355c"}]]}],["$","$L15",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$f",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Ferry-Boat Salvador–Itaparica | Horários, tarifas e fila"}],["$","meta","1",{"name":"description","content":"Horários, tarifas, situação da fila e cartões do Sistema Ferry-Boat Salvador–Itaparica. Protótipo acadêmico de redesign centrado no usuário."}],["$","meta","2",{"name":"robots","content":"noindex, nofollow"}],["$","link","3",{"rel":"icon","href":"/FerryBoat-Redesign/favicon.ico?favicon.02hgr8mfsxs88.ico","sizes":"16x16","type":"image/x-icon"}],["$","$L16","4",{}]]}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":"$@17","v":null,"s":"$b"}},"a":"$@18","u":"$@19","b":"DRTuWt5dHcgA26jf7jPMx"}
+10:null
+19:true
+b:300
+b:C
+18:0
+9:"$undefined"
+17:"$undefined"
+11:"$undefined"
